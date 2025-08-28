@@ -19,6 +19,14 @@ It is designed with a **dark modern UI** and optimized for both desktop and mobi
 
 ---
 
+## Preview
+
+![Dashboard Overview](assets/dashboard_preview.png)
+
+![Dashboard Time Series](assets/dashboard_time_preview.png)
+
+---
+
 ## Features  
 - ◼ **Filter by Product:** Select specific products or view overall sales  
 - ◼ **Filter by Date Range:** Interactive calendar to select time periods  
