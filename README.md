@@ -34,7 +34,7 @@ It is designed with a **dark modern UI** and optimized for both desktop and mobi
 ├── sales.csv      # Sales dataset (input data)
 ├── requirements.txt  # Project dependencies
 ├── assets/
-│   └── style.css  # Custom dark mode styling for the dashboard
+│   └── custom.css # Custom dark mode styling for the dashboard
 └── README.md      # Project documentation (this file)
 ```
 
@@ -46,7 +46,7 @@ It is designed with a **dark modern UI** and optimized for both desktop and mobi
 
 ### 1. Clone the repository  
 ```bash
-git clone https://github.com/your-username/sales-dashboard.git
+git clone https://github.com/ruan-ds/sales-dashboard.git
 cd sales-dashboard
 ```
 
@@ -98,6 +98,6 @@ http://127.0.0.1:8050/
 
 ## Customization  
 
-- **Styling**: Modify `assets/style.css` for layout, theme, or branding changes  
+- **Styling**: Modify `assets/custom.css` for layout, theme, or branding changes  
 - **Data**: Adapt `sales.csv` to your dataset with compatible column names  
 - **Metrics**: Add or replace KPIs in `app.py` inside the callback logic
