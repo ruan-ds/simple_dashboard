@@ -100,9 +100,4 @@ http://127.0.0.1:8050/
 
 - **Styling**: Modify `assets/style.css` for layout, theme, or branding changes  
 - **Data**: Adapt `sales.csv` to your dataset with compatible column names  
-- **Metrics**: Add or replace KPIs in `app.py` inside the callback logic  
-
----
-
-## License  
-This project is licensed under the **MIT License**.  
+- **Metrics**: Add or replace KPIs in `app.py` inside the callback logic
