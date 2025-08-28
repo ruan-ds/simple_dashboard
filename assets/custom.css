@@ -1,0 +1,296 @@
+/* ===========================
+   Global Styles
+   =========================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Main font family */
+    margin: 0;               /* Remove default body margin */
+    padding: 0;              /* Remove default body padding */
+    background: linear-gradient(135deg, #141e30 0%, #243b55 100%); /* Dark gradient background */
+    min-height: 100vh;       /* Ensure full screen height */
+}
+
+/* ===========================
+   Main Container Wrapper
+   =========================== */
+#react-entry-point > div {
+    padding: 25px;          /* Padding around content */
+    max-width: 1300px;      /* Restrict max width */
+    margin: 0 auto;         /* Center horizontally */
+}
+
+/* ===========================
+   Dashboard Title
+   =========================== */
+h1 {
+    color: #f1f1f1;         /* White text */
+    text-align: center;     /* Centered title */
+    font-size: 2.7rem;      /* Large font */
+    font-weight: 400;       /* Medium weight */
+    margin-bottom: 35px;    /* Space below title */
+    text-shadow: 0 3px 6px rgba(0,0,0,0.4); /* Subtle shadow */
+    letter-spacing: 1px;    /* Wider spacing */
+}
+
+/* ===========================
+   KPI Container & Cards
+   =========================== */
+.kpi-container {
+    display: flex;                /* Flex layout */
+    justify-content: space-around;/* Distribute evenly */
+    margin-bottom: 30px;          /* Space below KPIs */
+    gap: 20px;                    /* Gap between cards */
+    flex-wrap: wrap;              /* Wrap for small screens */
+}
+
+.kpi-card {
+    background: #1e293b;          /* Dark box background */
+    padding: 25px;                /* Internal spacing */
+    border-radius: 14px;          /* Rounded corners */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25); /* Ambient shadow */
+    text-align: center;           /* Centered text */
+    flex: 1;                      /* Flexible width */
+    min-width: 220px;             /* Minimum size */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover animation */
+    border: 1px solid rgba(255,255,255,0.05); /* Light outer border */
+}
+
+.kpi-card:hover {
+    transform: translateY(-6px); /* Lift effect */
+    box-shadow: 0 10px 28px rgba(0,0,0,0.35); /* Stronger shadow */
+}
+
+.kpi-card div, .kpi-card {
+    font-size: 1.2rem;   /* Font size */
+    color: #e2e8f0;      /* Light text */
+    font-weight: 600;    /* Semi-bold */
+    margin: 0;           /* Remove default margin */
+}
+
+/* ===========================
+   Graph Cards
+   =========================== */
+.dash-graph {
+    background: #1e293b;          /* Dark background */
+    border-radius: 14px;          /* Rounded */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25); /* Depth */
+    margin-bottom: 25px;          /* Spacing between charts */
+    padding: 10px;                /* Internal padding */
+    transition: transform 0.3s ease; /* Animation on hover */
+}
+
+.dash-graph:hover {
+    transform: translateY(-3px);  /* Lift effect */
+}
+
+.gtitle {
+    font-family: 'Segoe UI', sans-serif !important; /* Consistent font */
+    font-size: 1.5rem !important;   /* Chart title font size */
+    font-weight: 600 !important;    /* Bold text */
+    fill: #f1f1f1 !important;       /* White text */
+}
+
+/* ===========================
+   Controls Container
+   =========================== */
+.controls-container {
+    display: flex;          /* Vertical flex */
+    flex-direction: column; /* Stacked items */
+    gap: 18px;              /* Space between control groups */
+    margin-bottom: 30px;    /* Gap before KPIs */
+}
+
+.control-label {
+    color: #cbd5e1;        /* Light gray */
+    font-weight: 600;      /* Bold */
+    display: block;        /* Block element */
+    margin: 12px 0 6px 0;  /* Vertical spacing */
+    font-size: 0.95rem;    /* Slightly smaller */
+    letter-spacing: 0.5px; /* Extra spacing */
+}
+
+/* ===========================
+   Dropdown Styling
+   =========================== */
+.Select-control {
+    background-color: #1e293b !important; /* Dark dropdown */
+    border: 1px solid #334155 !important;  /* Border color */
+    border-radius: 8px !important;        /* Rounded edges */
+    box-shadow: none !important;          /* Remove shadow */
+}
+
+.Select-value-label  { color: #e2e8f0 !important; } /* Selected option text */
+.Select-placeholder  { color: #94a3b8 !important; } /* Placeholder color */
+.Select-arrow        { border-color: #e2e8f0 transparent transparent !important; }
+
+.VirtualizedSelectOption        { background: #1e293b !important; color: #e2e8f0 !important; }
+.VirtualizedSelectFocusedOption { background: #3b82f6 !important; color: white !important; }
+.VirtualizedSelectSelectedOption{ background: #2563eb !important; color: white !important; }
+
+.Select-input > input,
+.Select-input { background: #1e293b !important; color: #e2e8f0 !important; }
+
+.Select.is-focused > .Select-control,
+.Select.has-focus > .Select-control,
+.Select-control:focus {
+    border-color: #334155 !important; /* Stable border */
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* ===========================
+   Date Picker Styling
+   =========================== */
+.DateRangePickerInput {
+    background: #1e293b !important; /* Dark input */
+    border: 1px solid #334155 !important;
+    border-radius: 8px;
+    color: #e2e8f0 !important;
+}
+
+.DateInput, .DateInput_input {
+    background: #1e293b !important; /* Input background */
+    color: #e2e8f0 !important;      /* White text */
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.DateInput_input::placeholder { color: #94a3b8 !important; } /* Placeholder text */
+.DateRangePickerInput_arrow   { color: #e2e8f0 !important; } /* Arrow icon */
+
+.DateInput_input__focused,
+.DateInput_input:focus,
+.DateRangePickerInput__focused,
+.DateRangePickerInput:focus,
+.DateRangePicker:focus {
+    border-color: #334155 !important; /* Remove blue border */
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Calendar popup */
+.DayPicker, .CalendarMonth, .CalendarMonth_table,
+.DayPicker__withBorder, .CalendarMonthGrid, .DayPicker_focusRegion {
+    background: #1e293b !important; /* Dark calendar */
+    color: #e2e8f0 !important;
+    border: none !important;
+}
+
+.CalendarMonth_caption { color: #f1f5f9 !important; font-weight: 600; }
+.DayPicker_weekHeader  { color: #cbd5e1 !important; border-bottom: 1px solid #334155 !important; }
+
+.DayPickerNavigation_button {
+    background: #1e293b !important;
+    border: 1px solid #3b82f6 !important;
+    border-radius: 6px !important;
+    color: #f1f5f9 !important;
+    cursor: pointer;
+}
+.DayPickerNavigation_button:hover {
+    background: #3b82f6 !important;
+    color: white !important;
+}
+
+.CalendarDay {
+    background: #1e293b !important;
+    color: #e2e8f0 !important;
+    border: 1px solid #334155 !important;
+}
+.CalendarDay__hovered_span  { background: rgba(59,130,246,0.4) !important; color: white !important; }
+.CalendarDay__selected_span { background: rgba(37,99,235,0.35) !important; color: white !important; }
+.CalendarDay__selected      { background: #2563eb !important; color: white !important; font-weight: 700 !important; }
+.CalendarDay__today         { border: 1px solid #60a5fa !important; color: #facc15 !important; font-weight: bold; }
+.CalendarDay__outside       { background: #111827 !important; color: #6b7280 !important; }
+
+/* ===========================
+   Radio Buttons (Custom Circles)
+   =========================== */
+.radio-group {
+    display: flex;           /* Horizontal arrangement */
+    flex-direction: row;
+    gap: 20px;               /* Space between options */
+}
+
+.radio-group input {
+    display: none;           /* Hide default radios */
+}
+
+.radio-group label {
+    position: relative;      /* For custom circle position */
+    padding-left: 32px;      /* Space for circle */
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #e2e8f0;
+    user-select: none;
+    transition: color 0.25s ease;
+}
+
+/* Circle base */
+.radio-group label::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 50%;
+    transform: translateY(-50%);
+    height: 18px; width: 18px;
+    border-radius: 50%;      /* Make it round */
+    border: 2px solid #3b82f6;
+    background-color: #1e293b;
+    box-shadow: 0 0 6px rgba(59,130,246,0.4);
+    transition: all 0.25s ease;
+}
+
+/* Selected state */
+.radio-group label:has(input:checked)::before {
+    background-color: #3b82f6;
+    box-shadow: 0 0 10px rgba(59,130,246,0.9);
+}
+.radio-group label:has(input:checked) {
+    color: #3b82f6;
+}
+
+/* Hover state */
+.radio-group label:hover {
+    color: #60a5fa;
+}
+.radio-group label:hover::before {
+    border-color: #60a5fa;
+    box-shadow: 0 0 8px rgba(96,165,250,0.7);
+}
+
+/* ===========================
+   Accessibility: Remove focus outline
+   =========================== */
+*:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* ===========================
+   Scrollbar Styling
+   =========================== */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: rgba(0,0,0,0.2); }
+::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.3);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.6);
+}
+
+/* ===========================
+   Responsive Rules
+   =========================== */
+@media (max-width: 768px) {
+    .kpi-container {
+        flex-direction: column; /* Stack KPIs */
+        gap: 18px;
+    }
+    h1 { font-size: 2rem; }     /* Smaller title */
+    .kpi-card { min-width: auto; }
+    #react-entry-point > div { padding: 15px; }
+    .radio-group {
+        flex-direction: column; /* Stack radios */
+        gap: 12px;
+    }
+}
